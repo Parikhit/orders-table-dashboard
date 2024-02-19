@@ -75,7 +75,7 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
                         <Button className='bg-blue-700 px-10'>CREATE NEW</Button>
                     </div>
                 </div>
-                <div className='w-full flex items-center justify-around px-4 py-2 border rounded-lg bg-white shadow-md'>
+                <div className='w-full flex items-center justify-around px-4 py-2 border rounded-lg bg-white shadow-md overflow-x-scroll'>
                     <div className='flex flex-col py-4'>
                         <label className='mb-2 text-left font-semibold text-md'>
                             What are you looking for?
@@ -165,8 +165,8 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
                     </div>
                 </div>
 
-                <div className='border rounded-lg bg-white shadow-md p-3 my-6'>
-                    <div className='w-full flex flex-row justify-between items-center'>
+                <div className='w-full overflow-x-scroll border rounded-lg bg-white shadow-md p-3 my-6'>
+                    <div className='flex flex-row justify-between items-center'>
                         <div className='ml-3 mr-26 font-semibold text-xl'>Product Summary</div>
                         <div className='flex justify-between items-center'>
                             <div className='flex justify-between items-center'>
@@ -210,7 +210,7 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
                         </div>
                     </div>
 
-                    <div className='w-full flex items-center justify-around px-4 py-2'>
+                    <div className='flex items-center justify-around px-4 py-2'>
                         <Table>
                             <TableHeader>
                                 {table.getHeaderGroups().map((headerGroup) => (
